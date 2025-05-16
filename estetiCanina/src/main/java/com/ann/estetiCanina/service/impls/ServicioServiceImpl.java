@@ -4,12 +4,15 @@ package com.ann.estetiCanina.service.impls;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Service;
+
 import com.ann.estetiCanina.dtos.request.ServicioRequest;
 import com.ann.estetiCanina.dtos.response.ServicioResponse;
 import com.ann.estetiCanina.models.Servicio;
 import com.ann.estetiCanina.repository.ServicioRepository;
 import com.ann.estetiCanina.service.interfaces.IServicioService;
 
+@Service
 public class ServicioServiceImpl implements IServicioService{
      private final ServicioRepository servicioRepo;
 

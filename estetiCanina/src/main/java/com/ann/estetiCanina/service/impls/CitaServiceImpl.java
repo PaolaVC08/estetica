@@ -1,6 +1,9 @@
 package com.ann.estetiCanina.service.impls;
 
 import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 import com.ann.estetiCanina.dtos.request.CitaRequest;
@@ -11,6 +14,7 @@ import com.ann.estetiCanina.models.Mascota;
 import com.ann.estetiCanina.repository.CitaRepository;
 import com.ann.estetiCanina.service.interfaces.ICitaService;
 
+@Service
 public class CitaServiceImpl implements ICitaService{
     private final CitaRepository citaRepo;
     //private final MascotaRepository mascotaRepo;

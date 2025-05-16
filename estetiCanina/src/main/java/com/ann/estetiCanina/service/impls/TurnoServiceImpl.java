@@ -1,6 +1,9 @@
 package com.ann.estetiCanina.service.impls;
 
 import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import com.ann.estetiCanina.dtos.request.TurnoRequest;
 import com.ann.estetiCanina.dtos.response.TurnoResponse;
@@ -9,6 +12,7 @@ import com.ann.estetiCanina.models.Turno;
 import com.ann.estetiCanina.repository.TurnoRepository;
 import com.ann.estetiCanina.service.interfaces.ITurnoService;
 
+@Service
 public class TurnoServiceImpl implements ITurnoService{
     private final TurnoRepository turnoRepo;
     //private final EmpleadoRepository empleadoRepo;
