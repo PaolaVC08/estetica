@@ -3,6 +3,7 @@ package com.ann.estetiCanina.dtos.request;
 import java.time.LocalDate;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
@@ -23,7 +24,7 @@ public class MascotaRequest {
     @Past
     private LocalDate fecha_nacimiento;
 
-    @NotBlank
+    @NotNull
     private Long clienteId;
 
     public MascotaRequest( String nombre,  String raza, String sexo, LocalDate fecha_nacimiento, Long clienteId) {

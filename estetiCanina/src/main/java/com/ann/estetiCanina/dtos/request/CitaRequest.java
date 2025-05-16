@@ -4,13 +4,14 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 public class CitaRequest {
-    @NotBlank
+    @NotNull
     private Long mascota_id;
 
-    @NotBlank
+    @NotNull
     private Long empleado_id;
 
     @NotBlank

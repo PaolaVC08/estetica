@@ -7,6 +7,7 @@ public class MascotaResponse {
     private String sexo;
     private String nombreCliente;
 
+    public MascotaResponse(){}
     
     public MascotaResponse(Long id_mascota, String nombre, String raza, String sexo, String nombreCliente) {
         this.id_mascota = id_mascota;
